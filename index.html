@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Stop Watch</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="heading">
+            <h1>Stop Watch</h1>
+        </div>
+        <div class="content mt-5 ps-5 pe-5">
+            <div class="hour fs-3 mt-3">
+                <p>Hours</p>
+                <p id="hours" class="text-center">00</p>
+            </div>
+            <div class="minutes ms-sm-5 fs-3 mt-3">
+                <p>Minutes</p>
+                <p id="minutes" class="text-center">00</p>
+            </div>
+            <div class="seconds ms-sm-5 fs-3 mt-3">
+                <p>Seconds</p>
+                <p id="seconds" class="text-center">00</p>
+            </div>
+            <div class="milliseconds ms-sm-5 fs-3 mt-3">
+                <p>MilliSeconds</p>
+                <p id="milliseconds" class="text-center">00</p>
+            </div>
+        </div>
+        <div class="buttons mt-3">
+            <div class="startbtn">
+                <button onclick="start()" id="startbtn">Start</button>
+            </div>
+            <div class="stopbtn ms-sm-4">
+                <button onclick="stop()">Stop</button>
+            </div>
+            <div class="resetbtn ms-sm-4">
+                <button onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
